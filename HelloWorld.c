@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main()
 {
-	int *arr;
+	int *arr = NULL;
 	int si;
 	scanf("%d", &si);
 	arr = (int*) malloc (si * sizeof(int)); 
@@ -14,7 +15,7 @@ int main()
 	}
 	for(int i = 0; i < si; i++)
 	{
-		printf("Size of single elements is: %ld -->\t %d --> \t Address is : %p ",
+		printf("Size of single elements is: %ld -->\t %d --> \t Address is : %p",
 		sizeof(arr[i]), arr[i],&arr[i]);
 		printf("\n");
 	}
